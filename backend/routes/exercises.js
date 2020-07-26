@@ -24,7 +24,6 @@ router.route('/add').post((req, res) => {
   .then(() => res.json('Exercise added!'))
   .catch(err => res.status(400).json('Error: ' + err));
 });
-/*
 router.route('/:id').get((req, res) => {
   Exercise.findById(req.params.id)
     .then(exercise => res.json(exercise))
@@ -51,6 +50,6 @@ router.route('/update/:id').post((req, res) => {
     })
     .catch(err => res.status(400).json('Error: ' + err));
 });
-*/
+
 
 module.exports = router;
